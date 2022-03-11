@@ -1,0 +1,6 @@
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <p [class]="sorteando ? 'sorteando' : '' " >{{ numeroSorteado }}</p>
+    <ion-button [disabled]="sorteando"  (click)="sortear()" >{{ sorteando ? "Sorteando" : "Sortear" }}</ion-button>
+  </div>
+</ion-content>
